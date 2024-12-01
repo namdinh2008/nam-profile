@@ -1,0 +1,14 @@
+.header-width {
+    width: 864px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../img/6a6338e30392003f785ec2ae5ef7f896.jpg');
+    background-position: center;
+}
+.text-header {
+    text-shadow:
+    1px 1px 0 black,
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black;
+}

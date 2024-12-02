@@ -1,30 +1,41 @@
-# Show Portfolio
+# Show Portfolio 🎨
 
-Show Portfolio is a personal portfolio website designed to showcase your projects, skills, and professional achievements. Built with a clean, responsive design, it ensures an excellent user experience across devices.
+A modern, responsive personal portfolio website built with React and Tailwind CSS to showcase my professional work and skills.
 
-## 🌟 Live Demo
+## ✨ Live Demo
 
-View the live site here: [Show Portfolio](https://namdinh2008.github.io/show-portfolio)
+Check out the live demo: [Show Portfolio](https://show-portfo.netlify.app/)
 
-## 🛠️ Features
+## 🎯 Features
 
-- **Responsive Design**: Looks great on desktops, tablets, and mobile devices.
-- **Customizable Layout**: Easily update sections like About, Projects, Skills, and Contact.
-- **Dynamic Project Showcase**: Add projects with images, descriptions, and live/demo links.
-- **Contact Form**: Enable visitors to reach you directly from the site.
-- **Easy Deployment**: Deploy using GitHub Pages or other hosting platforms.
+- **Responsive Design**: Seamlessly adapts to all devices - desktop, tablet, and mobile
+- **Modern UI/UX**: Clean and professional interface with smooth animations
+- **Customizable Sections**:
+  - About Me
+  - Skills & Technologies
+  - Project Showcase
+  - Contact Information
+- **Dynamic Project Gallery**: Showcase your work with images and live demo links
+- **Performance Optimized**: Fast loading times and smooth transitions
+- **Easy to Maintain**: Well-structured codebase for easy updates
 
-## 📂 Project Structure
+## 🛠️ Built With
 
-```plaintext
-show-portfolio/
-├── public/            # Static files (favicon, images, etc.)
-├── src/               # Source code
-│   ├── components/    # React components for different sections
-│   ├── styles/        # CSS and styling files
-│   ├── data/          # Data files for easy customization
-│   ├── App.js         # Main app component
-│   └── index.js       # Entry point
-├── .gitignore         # Files to ignore in the repository
-├── package.json       # Project dependencies and scripts
-└── README.md          # Documentation
+- **React.js** - Frontend framework
+- **Tailwind CSS** - Styling
+- **React Router** - Navigation
+- **React Bootstrap** - UI Components
+- **Framer Motion** - Animations
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/namdinh2008/show-portfolio.git

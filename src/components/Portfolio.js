@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import {
   GithubIcon,
-  Linkedin,
   Mail,
   Phone,
   Code,
@@ -76,7 +75,7 @@ const Portfolio = () => {
       title: "Pepe App",
       link: "https://pepe-app-produce.netlify.app/",
       description: [
-        "A responsive *React-based* clone of *pepe.vip*.",
+        "A responsive *React-based* clone of <a href='https://pepe.vip' target='_blank' rel='noopener noreferrer'>*pepe.vip*</a>",
         "Features include:",
         "  - Smooth navigation between sections using *HashLink*.",
         "  - Modern and visually engaging design incorporating Pepe branding.",
@@ -87,15 +86,15 @@ const Portfolio = () => {
   ];
 
   const formatText = (text) => {
-    const parts = text.split(/(\*[^*]+\*)/); // Split by words surrounded by *
-    return parts.map((part, index) =>
-      part.startsWith("*") && part.endsWith("*") ? (
-        <strong key={index}>{part.slice(1, -1)}</strong> // Remove asterisks
-      ) : (
-        part
-      )
-    );
+    // Handle bold text
+    text = text.replace(/\*(.*?)\*/g, '<strong>$1</strong>');
+    
+    // Handle links
+    text = text.replace(/\[(.*?)\]$$(.*?)$$/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+    
+    return text;
   };
+
   const renderSection = () => {
     switch (activeSection) {
       case "about":
@@ -164,7 +163,12 @@ const Portfolio = () => {
                 </h3>
                 <div>
                   <h4 className="text-xl font-semibold text-purple-500 transition-transform transform hover:scale-110 hover:translate-x-5">
-                    <a href="https://aptech.vn/lap-trinh-vien-quoc-te-adse" target="_bank">ADSE International Programmer</a>
+                    <a
+                      href="https://aptech.vn/lap-trinh-vien-quoc-te-adse"
+                      target="_bank"
+                    >
+                      ADSE International Programmer
+                    </a>
                   </h4>
                   <p className="text-gray-700 mt-2">
                     <span className="block font-medium">
@@ -195,28 +199,28 @@ const Portfolio = () => {
                 </h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400 minw-5" />
+                    <CheckCircle className="w-5 h-5 text-green-400 minw-5 pt-1.5" />
                     <span>
                       <strong>HTML:</strong> Proficient in writing clean,
                       semantic markup and responsive design.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400 minw-5" />
+                    <CheckCircle className="w-5 h-5 text-green-400 minw-5 pt-1.5" />
                     <span>
                       <strong>CSS:</strong> Skilled in crafting visually
                       appealing layouts with animations and custom styles.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400 minw-5" />
+                    <CheckCircle className="w-5 h-5 text-green-400 minw-5 pt-1.5" />
                     <span>
                       <strong>JavaScript:</strong> Experienced in dynamic
                       functionality, DOM manipulation, and API integration.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400 minw-5" />
+                    <CheckCircle className="w-5 h-5 text-green-400 minw-5 pt-1.5" />
                     <span>
                       <strong>React:</strong> Skilled in creating SPAs and
                       reusable components with React.
@@ -232,28 +236,28 @@ const Portfolio = () => {
                 </h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400 minw-5" />
+                    <CheckCircle className="w-5 h-5 text-green-400 minw-5 pt-1.5" />
                     <span>
                       <strong>Material UI:</strong> Designing modern, responsive
                       UIs with Material UI components.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400 minw-5" />
+                    <CheckCircle className="w-5 h-5 text-green-400 minw-5 pt-1.5" />
                     <span>
                       <strong>Tailwind CSS:</strong> Utility-first responsive
                       design with Tailwind CSS.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400 minw-5" />
+                    <CheckCircle className="w-5 h-5 text-green-400 minw-5 pt-1.5" />
                     <span>
                       <strong>Git:</strong> Proficient in branch management and
                       resolving merge conflicts.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400 minw-5" />
+                    <CheckCircle className="w-5 h-5 text-green-400 minw-5 pt-1.5" />
                     <span>
                       <strong>GitHub:</strong> Collaboration, pull requests, and
                       code reviews.
@@ -270,28 +274,28 @@ const Portfolio = () => {
               </h3>
               <ul className="space-y-2">
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-400 minw-5" />
+                  <CheckCircle className="w-5 h-5 text-green-400 minw-5 pt-1.5" />
                   <span>
                     <strong>Passion for Coding:</strong> Enjoys solving problems
                     and keeping up with industry trends.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-400 minw-5" />
+                  <CheckCircle className="w-5 h-5 text-green-400 minw-5 pt-1.5" />
                   <span>
                     <strong>Fast Learner:</strong> Quickly adapts to new tools
                     for seamless team integration.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-400 minw-5" />
+                  <CheckCircle className="w-5 h-5 text-green-400 minw-5 pt-1.5" />
                   <span>
                     <strong>Team Player:</strong> Strong collaboration skills
                     for timely project delivery.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-400 minw-5" />
+                  <CheckCircle className="w-5 h-5 text-green-400 minw-5 pt-1.5" />
                   <span>
                     <strong>Attention to Detail:</strong> Meticulous in code
                     writing and reviewing for high-quality results.
@@ -304,42 +308,41 @@ const Portfolio = () => {
       case "projects":
         return (
           <div className="bg-gradient-to-r from-purple-100 via-purple-50 to-purple-100 p-8 rounded-lg shadow-xl">
-            <h2 className="text-3xl font-extrabold mb-6 text-purple-700 border-b-4 border-purple-500 inline-block">
-              Projects
-            </h2>
-            {projects.map((project, index) => (
+      <h2 className="text-3xl font-extrabold mb-6 text-purple-700 border-b-4 border-purple-500 inline-block">
+        Projects
+      </h2>
+      {projects.map((project, index) => (
+        <div
+          key={index}
+          className="mb-8 p-6 bg-white shadow-md rounded-lg transition-transform hover:scale-105"
+        >
+          <h3 className="font-bold text-purple-600 text-2xl mb-2 hover:underline">
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
+              {project.title}
+            </a>
+          </h3>
+          <div>
+            {project.description.map((item, itemIndex) => (
               <div
-                key={index}
-                className="mb-8 p-6 bg-white shadow-md rounded-lg transition-transform hover:scale-105"
-              >
-                <h3 className="font-bold text-purple-600 text-2xl mb-2 hover:underline">
-                  <a href={project.link} target="_blank">
-                    {project.title}
-                  </a>
-                </h3>
-                <div>
-                  {project.description.map((item, itemIndex) => (
-                    <ul
-                      key={itemIndex}
-                      className="text-gray-600 leading-relaxed"
-                    >
-                      <li>{formatText(item)}</li>
-                    </ul>
-                  ))}
-                </div>
-                <div className="flex flex-wrap gap-3">
-                  {project.technologies.map((tech, techIndex) => (
-                    <span
-                      key={techIndex}
-                      className="bg-purple-200 text-purple-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm hover:bg-purple-300"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
+                key={itemIndex}
+                className="text-gray-600 leading-relaxed"
+                dangerouslySetInnerHTML={{ __html: formatText(item) }}
+              />
             ))}
           </div>
+          <div className="flex flex-wrap gap-3 mt-4">
+            {project.technologies.map((tech, techIndex) => (
+              <span
+                key={techIndex}
+                className="bg-purple-200 text-purple-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm hover:bg-purple-300"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
         );
       case "contact":
         return (
@@ -364,17 +367,6 @@ const Portfolio = () => {
                   className="text-lg text-gray-700 hover:text-purple-600 font-medium transition duration-300"
                 >
                   {contactInfo.phone}
-                </a>
-              </div>
-              <div className="flex items-center gap-4">
-                <Linkedin className="text-purple-500 text-2xl" />
-                <a
-                  href={contactInfo.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-lg text-gray-700 hover:text-purple-600 font-medium transition duration-300"
-                >
-                  dinh-nam
                 </a>
               </div>
               <div className="flex items-center gap-4">
@@ -439,11 +431,11 @@ const Portfolio = () => {
           <p>© 2024 {contactInfo.name} | All Rights Reserved</p>
           <div className="flex justify-center mt-4 space-x-4">
             <a
-              href={contactInfo.linkedin}
+              href={`mailto:${contactInfo.email}`}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Linkedin className="text-purple-500 hover:text-purple-700" />
+              <Mail className="text-purple-500 hover:text-purple-700" />
             </a>
             <a
               href={contactInfo.github}

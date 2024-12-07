@@ -15,7 +15,6 @@ Check out the live demo: [Show Portfolio](https://show-portfo.netlify.app/)
   - Skills & Technologies
   - Project Showcase
   - Contact Information
-- **Dynamic Project Gallery**: Showcase your work with images and live demo links
 - **Performance Optimized**: Fast loading times and smooth transitions
 - **Easy to Maintain**: Well-structured codebase for easy updates
 
@@ -23,9 +22,7 @@ Check out the live demo: [Show Portfolio](https://show-portfo.netlify.app/)
 
 - **React.js** - Frontend framework
 - **Tailwind CSS** - Styling
-- **React Router** - Navigation
-- **React Bootstrap** - UI Components
-- **Framer Motion** - Animations
+- **Lucide-React** - Icon
 
 ## 🚀 Getting Started
 

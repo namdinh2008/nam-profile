@@ -29,24 +29,6 @@ const Portfolio = () => {
 
   const projects = [
     {
-      title: "Personal Portfolio Website",
-      link: "https://namdinh-portfolio.netlify.app/",
-      description: [
-        "Built using *React*, *Tailwind CSS*, and *React-Bootstrap* for a responsive and modern showcase.",
-        "Key features include:",
-        "  - *Smooth animation effects* for seamless transitions.",
-        "  - *Dynamic active link highlighting* to show the current section.",
-        "  - *Scroll-triggered background changes* for visual engagement.",
-        "  - *Hover effects* within the `proj-imgbx` class to reveal project details interactively.",
-      ],
-      technologies: [
-        "React",
-        "Tailwind CSS",
-        "React-Bootstrap",
-        "Animation effects",
-      ],
-    },
-    {
       title: "To-Do List Application",
       link: "https://namdinh-simple-todo-list-app.netlify.app/",
       description: [
@@ -81,17 +63,51 @@ const Portfolio = () => {
         "  - Modern and visually engaging design incorporating Pepe branding.",
         "  - Embedded *iframes* for related content.",
       ],
+      technologies: ["Lucide-react", "Taiwind Css"],
+    },
+    {
+      title: "NamDinh Profile",
+      link: "https://pepe-app-produce.netlify.app/",
+      description: [
+        "A responsive portfolio website created with *React* and *Tailwind CSS* to showcase my work and skills.",
+        "Features include:",
+        "  - *Dynamic UI*: Built with React.js for an interactive experience.",
+        "  - *Responsive Design*: Optimized for all device sizes.",
+        "  - *Smooth Navigation*: Uses React Router for easy transitions.",
+        "  - *Project Showcase*: Features key projects with descriptions and visuals.",
+        "  - *Contact Section*: Includes a direct contact form for visitors.",
+      ],
       technologies: ["Responsive", "React-router-hash-link"],
+    },
+    {
+      title: "Personal Portfolio Website",
+      link: "https://namdinh-portfolio.netlify.app/",
+      description: [
+        "Built using *React*, *Tailwind CSS*, and *React-Bootstrap* for a responsive and modern showcase.",
+        "Key features include:",
+        "  - *Dynamic active link highlighting* to show the current section.",
+        "  - *Scroll-triggered background changes* for visual engagement.",
+        "  - *Hover effects* within the `proj-imgbx` class to reveal project details interactively.",
+      ],
+      technologies: [
+        "React",
+        "Tailwind CSS",
+        "React-Bootstrap",
+        "Animation effects",
+      ],
     },
   ];
 
   const formatText = (text) => {
     // Handle bold text
-    text = text.replace(/\*(.*?)\*/g, '<strong>$1</strong>');
-    
+    text = text.replace(/\*(.*?)\*/g, "<strong>$1</strong>");
+
     // Handle links
-    text = text.replace(/\[(.*?)\]$$(.*?)$$/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
-    
+    text = text.replace(
+      /\[(.*?)\]$$(.*?)$$/g,
+      '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>'
+    );
+
     return text;
   };
 
@@ -308,41 +324,45 @@ const Portfolio = () => {
       case "projects":
         return (
           <div className="bg-gradient-to-r from-purple-100 via-purple-50 to-purple-100 p-8 rounded-lg shadow-xl">
-      <h2 className="text-3xl font-extrabold mb-6 text-purple-700 border-b-4 border-purple-500 inline-block">
-        Projects
-      </h2>
-      {projects.map((project, index) => (
-        <div
-          key={index}
-          className="mb-8 p-6 bg-white shadow-md rounded-lg transition-transform hover:scale-105"
-        >
-          <h3 className="font-bold text-purple-600 text-2xl mb-2 hover:underline">
-            <a href={project.link} target="_blank" rel="noopener noreferrer">
-              {project.title}
-            </a>
-          </h3>
-          <div>
-            {project.description.map((item, itemIndex) => (
+            <h2 className="text-3xl font-extrabold mb-6 text-purple-700 border-b-4 border-purple-500 inline-block">
+              Projects
+            </h2>
+            {projects.map((project, index) => (
               <div
-                key={itemIndex}
-                className="text-gray-600 leading-relaxed"
-                dangerouslySetInnerHTML={{ __html: formatText(item) }}
-              />
-            ))}
-          </div>
-          <div className="flex flex-wrap gap-3 mt-4">
-            {project.technologies.map((tech, techIndex) => (
-              <span
-                key={techIndex}
-                className="bg-purple-200 text-purple-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm hover:bg-purple-300"
+                key={index}
+                className="mb-8 p-6 bg-white shadow-md rounded-lg transition-transform hover:scale-105"
               >
-                {tech}
-              </span>
+                <h3 className="font-bold text-purple-600 text-2xl mb-2 hover:underline">
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {project.title}
+                  </a>
+                </h3>
+                <div>
+                  {project.description.map((item, itemIndex) => (
+                    <div
+                      key={itemIndex}
+                      className="text-gray-600 leading-relaxed"
+                      dangerouslySetInnerHTML={{ __html: formatText(item) }}
+                    />
+                  ))}
+                </div>
+                <div className="flex flex-wrap gap-3 mt-4">
+                  {project.technologies.map((tech, techIndex) => (
+                    <span
+                      key={techIndex}
+                      className="bg-purple-200 text-purple-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm hover:bg-purple-300"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
-        </div>
-      ))}
-    </div>
         );
       case "contact":
         return (

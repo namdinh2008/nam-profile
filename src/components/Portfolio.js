@@ -215,28 +215,28 @@ const Portfolio = () => {
                 </h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400 minw-5 pt-1.5" />
+                    <CheckCircle className="w-5 h-5 text-green-700 minw-5 pt-1.5" />
                     <span>
                       <strong>HTML:</strong> Proficient in writing clean,
                       semantic markup and responsive design.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400 minw-5 pt-1.5" />
+                    <CheckCircle className="w-5 h-5 text-green-700 minw-5 pt-1.5" />
                     <span>
                       <strong>CSS:</strong> Skilled in crafting visually
                       appealing layouts with animations and custom styles.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400 minw-5 pt-1.5" />
+                    <CheckCircle className="w-5 h-5 text-green-700 minw-5 pt-1.5" />
                     <span>
                       <strong>JavaScript:</strong> Experienced in dynamic
                       functionality, DOM manipulation, and API integration.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400 minw-5 pt-1.5" />
+                    <CheckCircle className="w-5 h-5 text-green-700 minw-5 pt-1.5" />
                     <span>
                       <strong>React:</strong> Skilled in creating SPAs and
                       reusable components with React.
@@ -252,28 +252,28 @@ const Portfolio = () => {
                 </h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400 minw-5 pt-1.5" />
+                    <CheckCircle className="w-5 h-5 text-green-700 minw-5 pt-1.5" />
                     <span>
                       <strong>Material UI:</strong> Designing modern, responsive
                       UIs with Material UI components.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400 minw-5 pt-1.5" />
+                    <CheckCircle className="w-5 h-5 text-green-700 minw-5 pt-1.5" />
                     <span>
                       <strong>Tailwind CSS:</strong> Utility-first responsive
                       design with Tailwind CSS.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400 minw-5 pt-1.5" />
+                    <CheckCircle className="w-5 h-5 text-green-700 minw-5 pt-1.5" />
                     <span>
                       <strong>Git:</strong> Proficient in branch management and
                       resolving merge conflicts.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-400 minw-5 pt-1.5" />
+                    <CheckCircle className="w-5 h-5 text-green-700 minw-5 pt-1.5" />
                     <span>
                       <strong>GitHub:</strong> Collaboration, pull requests, and
                       code reviews.
@@ -290,28 +290,28 @@ const Portfolio = () => {
               </h3>
               <ul className="space-y-2">
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-400 minw-5 pt-1.5" />
+                  <CheckCircle className="w-5 h-5 text-green-700 minw-5 pt-1.5" />
                   <span>
                     <strong>Passion for Coding:</strong> Enjoys solving problems
                     and keeping up with industry trends.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-400 minw-5 pt-1.5" />
+                  <CheckCircle className="w-5 h-5 text-green-700 minw-5 pt-1.5" />
                   <span>
                     <strong>Fast Learner:</strong> Quickly adapts to new tools
                     for seamless team integration.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-400 minw-5 pt-1.5" />
+                  <CheckCircle className="w-5 h-5 text-green-700 minw-5 pt-1.5" />
                   <span>
                     <strong>Team Player:</strong> Strong collaboration skills
                     for timely project delivery.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-400 minw-5 pt-1.5" />
+                  <CheckCircle className="w-5 h-5 text-green-700 minw-5 pt-1.5" />
                   <span>
                     <strong>Attention to Detail:</strong> Meticulous in code
                     writing and reviewing for high-quality results.
@@ -371,7 +371,7 @@ const Portfolio = () => {
               Contact Me
             </h2>
             <div className="space-y-6">
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-3">
                 <Mail className="text-purple-500 text-2xl" />
                 <a
                   href={`mailto:${contactInfo.email}`}
@@ -380,7 +380,7 @@ const Portfolio = () => {
                   {contactInfo.email}
                 </a>
               </div>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-3">
                 <Phone className="text-purple-500 text-2xl" />
                 <a
                   href={`tel:${contactInfo.phone}`}
@@ -389,7 +389,7 @@ const Portfolio = () => {
                   {contactInfo.phone}
                 </a>
               </div>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-3">
                 <GithubIcon className="text-purple-500 text-2xl" />
                 <a
                   href={contactInfo.github}
@@ -411,26 +411,29 @@ const Portfolio = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 py-10">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto px-4">
         {/* Header */}
-        <header className="bg-white shadow-md rounded-lg mb-8 header-width">
+        <header
+          className="bg-cover bg-center shadow-md rounded-lg mb-8 max-w-4xl header-width block"
+        >
           <div className="content">
+            {/* Profile Section */}
             <div className="p-6 text-center">
-              <h1 className="text-4xl font-bold text-white text-header">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white text-header">
                 {contactInfo.name} Profile
               </h1>
-              <p className="text-gray-600 mt-2 font-bold">
+              <p className="text-gray-600 mt-2 font-bold text-sm sm:text-base lg:text-lg">
                 Front-End Developer | Computer Science Student
               </p>
             </div>
 
             {/* Navigation */}
-            <nav className="flex justify-center border-t">
+            <nav className="flex flex-wrap justify-center border-t border-gray-300 mt-4 bg-transparent">
               {sections.map((section) => (
                 <button
                   key={section.id}
                   onClick={() => setActiveSection(section.id)}
-                  className={`px-4 py-3 transition-colors duration-300 font-bold ${
+                  className={`px-4 py-2 sm:py-3 transition-colors duration-300 font-bold text-sm sm:text-base lg:text-lg ${
                     activeSection === section.id
                       ? "bg-purple-400 text-white"
                       : "text-gray-700 hover:bg-purple-200"
@@ -444,7 +447,7 @@ const Portfolio = () => {
         </header>
 
         {/* Main Content */}
-        <main className="px-4">{renderSection()}</main>
+        <main className="">{renderSection()}</main>
 
         {/* Footer */}
         <footer className="mt-8 text-center text-gray-500">
@@ -455,7 +458,7 @@ const Portfolio = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Mail className="text-purple-500 hover:text-purple-700" />
+              <Mail className="text-gray-700 hover:text-gray-900" />
             </a>
             <a
               href={contactInfo.github}

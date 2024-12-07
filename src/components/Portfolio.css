@@ -1,12 +1,11 @@
 .header-width {
-    width: 864px;
     margin-left: auto;
     margin-right: auto;
     background-image: url('../img/6a6338e30392003f785ec2ae5ef7f896.jpg');
-    background-position: center;
-    background-size: cover;
     background-color: rgba(213, 212, 212, 0.5); 
     background-blend-mode: overlay; /* Combines the image and the overlay */
+    max-width: 864px;
+    
 }
 
 .text-header {
@@ -30,3 +29,4 @@ span {
 .minw-5 {
     min-width: 20px;
 }
+

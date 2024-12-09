@@ -16,7 +16,6 @@ const Portfolio = () => {
     name: "NamDinh",
     email: "derricrane@gmail.com",
     phone: "0358846173",
-    linkedin: "https://www.linkedin.com/in/%C4%91inh-nam-b158112aa/",
     github: "https://github.com/namdinh2008",
   };
 
@@ -30,7 +29,7 @@ const Portfolio = () => {
   const projects = [
     {
       title: "To-Do List Application",
-      link: "https://namdinh-simple-todo-list-app.netlify.app/",
+      link: "https://dothisnow.netlify.app",
       description: [
         "Developed with *React* and styled using *Tailwind CSS*.",
         "Core functionality includes:",
@@ -43,7 +42,7 @@ const Portfolio = () => {
     },
     {
       title: "Weather App",
-      link: "https://weather-app-namdinh.netlify.app/",
+      link: "https://windandclouds.netlify.app",
       description: [
         "A weather forecast website offering real-time weather data for major cities globally.",
         "Built using *React* with the following features:",
@@ -55,7 +54,7 @@ const Portfolio = () => {
     },
     {
       title: "Pepe App",
-      link: "https://pepe-app-produce.netlify.app/",
+      link: "https://pepehub.netlify.app",
       description: [
         "A responsive *React-based* clone of <a href='https://pepe.vip' target='_blank' rel='noopener noreferrer'>*pepe.vip*</a>",
         "Features include:",
@@ -67,7 +66,7 @@ const Portfolio = () => {
     },
     {
       title: "NamDinh Profile",
-      link: "https://pepe-app-produce.netlify.app/",
+      link: "https://namdinhduc.netlify.app",
       description: [
         "A responsive portfolio website created with *React* and *Tailwind CSS* to showcase my work and skills.",
         "Features include:",
@@ -81,7 +80,7 @@ const Portfolio = () => {
     },
     {
       title: "Personal Portfolio Website",
-      link: "https://namdinh-portfolio.netlify.app/",
+      link: "https://namdinhportfolio.netlify.app",
       description: [
         "Built using *React*, *Tailwind CSS*, and *React-Bootstrap* for a responsive and modern showcase.",
         "Key features include:",

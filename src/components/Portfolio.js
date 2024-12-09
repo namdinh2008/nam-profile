@@ -85,7 +85,6 @@ const Portfolio = () => {
         "Built using *React*, *Tailwind CSS*, and *React-Bootstrap* for a responsive and modern showcase.",
         "Key features include:",
         "  - *Dynamic active link highlighting* to show the current section.",
-        "  - *Scroll-triggered background changes* for visual engagement.",
         "  - *Hover effects* within the `proj-imgbx` class to reveal project details interactively.",
       ],
       technologies: [

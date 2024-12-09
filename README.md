@@ -13,7 +13,6 @@ Check out the live demo: [Show Portfolio](https://show-portfo.netlify.app/)
 - **Customizable Sections**:
   - About Me
   - Skills & Technologies
-  - Project Showcase
   - Contact Information
 - **Performance Optimized**: Fast loading times and smooth transitions
 - **Easy to Maintain**: Well-structured codebase for easy updates
